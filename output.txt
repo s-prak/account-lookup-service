@@ -1,0 +1,171 @@
+[+] Running 14/14
+ ✔ Container als_account-lookup-service-handlers    Removed                                                                                                                                                      0.0s 
+ ✔ Container als_account-lookup-service             Removed                                                                                                                                                      0.0s 
+ ✔ Container als_central-ledger                     Removed                                                                                                                                                      0.1s 
+ ✔ Container als_mysql                              Removed                                                                                                                                                      2.1s 
+ ✔ Container account-lookup-service-proxy-1         Removed                                                                                                                                                      1.0s 
+ ✔ Container als_kafka                              Removed                                                                                                                                                      0.3s 
+ ✔ Container account-lookup-service-redis-node-0-1  Removed                                                                                                                                                      0.2s 
+ ✔ Container als_mysql_central_ledger               Removed                                                                                                                                                      2.1s 
+ ✔ Container account-lookup-service-redis-node-4-1  Removed                                                                                                                                                      0.4s 
+ ✔ Container account-lookup-service-redis-node-3-1  Removed                                                                                                                                                      0.3s 
+ ✔ Container account-lookup-service-redis-node-5-1  Removed                                                                                                                                                      0.4s 
+ ✔ Container account-lookup-service-redis-node-1-1  Removed                                                                                                                                                      0.5s 
+ ✔ Container account-lookup-service-redis-node-2-1  Removed                                                                                                                                                      0.5s 
+ ✔ Network als-mojaloop-net                         Removed                                                                                                                                                      0.1s 
+[+] Running 16/16
+ ✔ Network als-mojaloop-net                                                                                                                                      Created                                         0.1s 
+ ✔ Container account-lookup-service-redis-node-1-1                                                                                                               Started                                         2.8s 
+ ✔ Container account-lookup-service-redis-node-2-1                                                                                                               Started                                         2.9s 
+ ✔ Container account-lookup-service-redis-node-5-1                                                                                                               Started                                         3.1s 
+ ✔ Container als_kafka                                                                                                                                           Healthy                                        10.9s 
+ ✔ Container als_mysql_central_ledger                                                                                                                            Healthy                                        13.4s 
+ ✔ Container account-lookup-service-redis-node-3-1                                                                                                               Started                                         3.0s 
+ ✔ Container als_mysql                                                                                                                                           Healthy                                        34.6s 
+ ✔ Container account-lookup-service-redis-node-4-1                                                                                                               Started                                         2.9s 
+ ✔ Container account-lookup-service-proxy-1                                                                                                                      S...                                            3.0s 
+ ! kafka The requested image's platform (linux/amd64) does not match the detected host platform (linux/arm64/v8) and no specific platform was requested                                                          0.0s 
+ ✔ Container account-lookup-service-redis-node-0-1                                                                                                               Healthy                                        34.1s 
+ ✘ Container als_central-ledger                                                                                                                                  Error                                          43.8s 
+ ! central-ledger The requested image's platform (linux/amd64) does not match the detected host platform (linux/arm64/v8) and no specific platform was requested                                                 0.0s 
+ ✔ Container als_account-lookup-service                                                                                                                          Creat...                                        0.5s 
+ ✔ Container als_account-lookup-service-handlers                                                                                                                 Created                                         0.4s 
+dependency failed to start: container als_central-ledger exited (1)
+sprak@Shuchitas-MacBook-Pro account-lookup-service % docker compose down -v
+docker compose up -d
+
+[+] Running 14/13
+ ✔ Container account-lookup-service-redis-node-3-1  Removed                                                                                                                                                      0.4s 
+ ✔ Container account-lookup-service-proxy-1         Removed                                                                                                                                                      1.0s 
+ ✔ Container account-lookup-service-redis-node-2-1  Removed                                                                                                                                                      0.3s 
+ ✔ Container als_account-lookup-service-handlers    Removed                                                                                                                                                      0.0s 
+ ✔ Container account-lookup-service-redis-node-1-1  Removed                                                                                                                                                      0.5s 
+ ✔ Container account-lookup-service-redis-node-5-1  Removed                                                                                                                                                      0.5s 
+ ✔ Container account-lookup-service-redis-node-4-1  Removed                                                                                                                                                      0.4s 
+ ✔ Container als_account-lookup-service             Removed                                                                                                                                                      0.0s 
+ ✔ Container als_mysql                              Removed                                                                                                                                                      1.2s 
+ ✔ Container als_central-ledger                     Removed                                                                                                                                                      0.2s 
+ ✔ Container account-lookup-service-redis-node-0-1  Removed                                                                                                                                                     10.1s 
+ ✔ Container als_kafka                              Removed                                                                                                                                                      0.5s 
+ ✔ Container als_mysql_central_ledger               Removed                                                                                                                                                      1.3s 
+ ✔ Network als-mojaloop-net                         Removed                                                                                                                                                      0.1s 
+[+] Running 16/16
+ ✔ Network als-mojaloop-net                                                                                                                                      Created                                         0.0s 
+ ✔ Container account-lookup-service-redis-node-3-1                                                                                                               Started                                         2.1s 
+ ✔ Container als_kafka                                                                                                                                           Healthy                                         9.7s 
+ ✔ Container als_mysql_central_ledger                                                                                                                            Healthy                                        12.7s 
+ ✔ Container account-lookup-service-redis-node-2-1                                                                                                               Started                                         2.4s 
+ ✘ Container account-lookup-service-redis-node-0-1                                                                                                               Error                                           2.7s 
+ ✔ Container account-lookup-service-redis-node-4-1                                                                                                               Started                                         1.8s 
+ ✔ Container account-lookup-service-proxy-1                                                                                                                      S...                                            2.4s 
+ ✔ Container account-lookup-service-redis-node-1-1                                                                                                               Started                                         2.0s 
+ ✔ Container als_mysql                                                                                                                                           Started                                         2.2s 
+ ✔ Container account-lookup-service-redis-node-5-1                                                                                                               Started                                         2.1s 
+ ! kafka The requested image's platform (linux/amd64) does not match the detected host platform (linux/arm64/v8) and no specific platform was requested                                                          0.0s 
+ ✔ Container als_central-ledger                                                                                                                                  Created                                         0.1s 
+ ! central-ledger The requested image's platform (linux/amd64) does not match the detected host platform (linux/arm64/v8) and no specific platform was requested                                                 0.0s 
+ ✔ Container als_account-lookup-service                                                                                                                          Creat...                                        0.4s 
+ ✔ Container als_account-lookup-service-handlers                                                                                                                 Created                                         0.4s 
+dependency failed to start: container account-lookup-service-redis-node-0-1 exited (1)
+sprak@Shuchitas-MacBook-Pro account-lookup-service % docker compose down -v
+docker compose up -d
+
+[+] Running 14/14
+ ✔ Container als_account-lookup-service-handlers    Removed                                                                                                                                                      0.1s 
+ ✔ Container account-lookup-service-redis-node-3-1  Removed                                                                                                                                                      0.1s 
+ ✔ Container account-lookup-service-redis-node-1-1  Removed                                                                                                                                                      0.0s 
+ ✔ Container account-lookup-service-redis-node-4-1  Removed                                                                                                                                                      0.1s 
+ ✔ Container account-lookup-service-redis-node-2-1  Removed                                                                                                                                                      0.1s 
+ ✔ Container account-lookup-service-proxy-1         Removed                                                                                                                                                      0.9s 
+ ✔ Container account-lookup-service-redis-node-5-1  Removed                                                                                                                                                      0.1s 
+ ✔ Container als_account-lookup-service             Removed                                                                                                                                                      0.0s 
+ ✔ Container als_mysql                              Removed                                                                                                                                                      2.0s 
+ ✔ Container als_central-ledger                     Removed                                                                                                                                                      0.0s 
+ ✔ Container account-lookup-service-redis-node-0-1  Removed                                                                                                                                                      0.1s 
+ ✔ Container als_kafka                              Removed                                                                                                                                                      0.4s 
+ ✔ Container als_mysql_central_ledger               Removed                                                                                                                                                      1.9s 
+ ✔ Network als-mojaloop-net                         Removed                                                                                                                                                      0.1s 
+[+] Running 9/9
+ ! account-lookup-service-handlers Warning failed to resolve reference "docker.io/mojaloop/account-lookup-service:local": docker.io/mojaloop/account-lookup-service:lo...                                        3.4s 
+ ✔ redis-node-3 Pulled                                                                                                                                                                                          20.8s 
+   ✔ 7d01bc274043 Download complete                                                                                                                                                                              7.6s 
+ ✔ redis-node-1 Pulled                                                                                                                                                                                          20.8s 
+ ✔ redis-node-0 Pulled                                                                                                                                                                                          20.8s 
+ ✔ redis-node-2 Pulled                                                                                                                                                                                          20.8s 
+ ! account-lookup-service Warning        failed to resolve reference "docker.io/mojaloop/account-lookup-service:local": docker.io/mojaloop/account-lookup-service:local: not ...                                 3.4s 
+ ✔ redis-node-5 Pulled                                                                                                                                                                                          20.7s 
+ ✔ redis-node-4 Pulled                                                                                                                                                                                          20.8s 
+[+] Running 0/0
+[+] Running 0/1unt-lookup-service  Building                                                                                                                                                                      0.1s 
+[+] Building 351.4s (15/16)                                                                                                                                                                      docker:desktop-linux 
+[+] Building 353.6s (27/27) FINISHED                                                                                                                                                             docker:desktop-linux
+ => [account-lookup-service internal] load build definition from Dockerfile                                                                                                                                      0.0s
+ => => transferring dockerfile: 1.13kB                                                                                                                                                                           0.0s 
+ => [account-lookup-service-handlers internal] load metadata for docker.io/library/node:lts-alpine                                                                                                               5.9s
+ => [account-lookup-service internal] load .dockerignore                                                                                                                                                         0.0s
+ => => transferring context: 183B                                                                                                                                                                                0.0s
+ => [account-lookup-service-handlers builder  1/10] FROM docker.io/library/node:lts-alpine@sha256:5340cbfc2df14331ab021555fdd9f83f072ce811488e705b0e736b11adeec4bb                                              15.3s
+ => => resolve docker.io/library/node:lts-alpine@sha256:5340cbfc2df14331ab021555fdd9f83f072ce811488e705b0e736b11adeec4bb                                                                                         0.0s
+ => => sha256:3a953394efe83b66644f5172a1e983c6e0a4562da73bdc99ed9f7a56e6f4c43b 446B / 446B                                                                                                                       0.3s
+ => => sha256:0f5de7b9fedaabe948ed84b67afe5e940933cc96fa1a88a1fbef64d739e5cbf6 51.04MB / 51.04MB                                                                                                                14.6s
+ => => sha256:fe07684b16b82247c3539ed86a65ff37a76138ec25d380bd80c869a1a4c73236 3.80MB / 3.80MB                                                                                                                   1.8s
+ => => sha256:4e500f9ee51d1efbea35adb29056db1db8cde5c30697af21e62da5fe6727f741 1.26MB / 1.26MB                                                                                                                   0.8s
+ => => extracting sha256:fe07684b16b82247c3539ed86a65ff37a76138ec25d380bd80c869a1a4c73236                                                                                                                        0.1s 
+ => => extracting sha256:0f5de7b9fedaabe948ed84b67afe5e940933cc96fa1a88a1fbef64d739e5cbf6                                                                                                                        0.6s 
+ => => extracting sha256:4e500f9ee51d1efbea35adb29056db1db8cde5c30697af21e62da5fe6727f741                                                                                                                        0.0s 
+ => => extracting sha256:3a953394efe83b66644f5172a1e983c6e0a4562da73bdc99ed9f7a56e6f4c43b                                                                                                                        0.0s
+ => [account-lookup-service internal] load build context                                                                                                                                                         0.0s 
+ => => transferring context: 5.93kB                                                                                                                                                                              0.0s 
+ => CACHED [account-lookup-service-handlers builder  2/10] WORKDIR /opt/app                                                                                                                                      0.2s 
+ => CACHED [account-lookup-service-handlers builder  3/10] RUN apk --no-cache add git                                                                                                                            2.4s 
+ => CACHED [account-lookup-service-handlers builder  4/10] RUN apk add --no-cache -t build-dependencies make gcc g++ python3 py3-setuptools libtool openssl-dev autoconf automake bash     && cd $(npm root -g  16.8s 
+ => [account-lookup-service builder  5/10] COPY package.json package-lock.json /opt/app/                                                                                                                         0.1s 
+ => [account-lookup-service builder  6/10] RUN npm ci                                                                                                                                                          205.4s 
+ => [account-lookup-service builder  7/10] COPY src /opt/app/src                                                                                                                                                 0.3s 
+ => [account-lookup-service builder  8/10] COPY config /opt/app/config                                                                                                                                           0.0s 
+ => [account-lookup-service builder  9/10] COPY migrations /opt/app/migrations                                                                                                                                   0.0s 
+ => [account-lookup-service builder 10/10] COPY seeds /opt/app/seeds                                                                                                                                             0.0s 
+ => [account-lookup-service] exporting to image                                                                                                                                                                106.6s 
+ => => exporting layers                                                                                                                                                                                        106.6s 
+ => => exporting manifest sha256:d561490c76e081119db79b343b73577b3584636def982b0493941fa386fd48fc                                                                                                                0.0s
+ => => exporting config sha256:a0c412121c0c13bbadc4096eae0e0bc32e392ee26c428314cc99af8b43c9a4da                                                                                                                  0.0s
+ => => exporting attestation manifest sha256:f86026603634a0954e115a5d18c8d94a6115ac127e0d73d8ad8d3bdf92a64088                                                                                                    0.0s
+ => => exporting manifest list sha256:bdf3d9e4f931d6ffcd099f3b34486571a2c30119188bd92d45a502e073731169                                                                                                           0.0s
+ => => naming to docker.io/mojaloop/account-lookup-service:local                                                                                                                                                 0.0s 
+ => [account-lookup-service] resolving provenance for metadata file                                                                                                                                              0.0s 
+ => [account-lookup-service-handlers internal] load build definition from Dockerfile                                                                                                                             0.0s 
+ => => transferring dockerfile: 1.13kB                                                                                                                                                                           0.0s 
+ => [account-lookup-service-handlers internal] load .dockerignore                                                                                                                                                0.0s
+ => => transferring context: 183B                                                                                                                                                                                0.0s
+ => [account-lookup-service-handlers internal] load build context                                                                                                                                                0.0s
+ => => transferring context: 5.93kB                                                                                                                                                                              0.0s
+ => CACHED [account-lookup-service-handlers builder  5/10] COPY package.json package-lock.json /opt/app/                                                                                                         0.0s
+ => CACHED [account-lookup-service-handlers builder  6/10] RUN npm ci                                                                                                                                            0.0s
+ => CACHED [account-lookup-service-handlers builder  7/10] COPY src /opt/app/src                                                                                                                                 0.0s
+ => CACHED [account-lookup-service-handlers builder  8/10] COPY config /opt/app/config                                                                                                                           0.0s
+ => CACHED [account-lookup-service-handlers builder  9/10] COPY migrations /opt/app/migrations                                                                                                                   0.0s
+ => CACHED [account-lookup-service-handlers builder 10/10] COPY seeds /opt/app/seeds                                                                                                                             0.0s
+ => [account-lookup-service-handlers] exporting to image                                                                                                                                                         0.1s
+ => => exporting layers                                                                                                                                                                                          0.0s
+ => => exporting manifest sha256:ffebc95bc03a0ec281912235a78238cf00c13fbd6c8b97cda60efece59c777f7                                                                                                                0.0s
+ => => exporting config sha256:cd4508ed1068f50f04a4d680e2e41a509b26a0c553524098516fdf19daed7669                                                                                                                  0.0s
+ => => exporting attestation manifest sha256:b3dbe5fa0411ca9ff43cd62251b369601f190f9da464bf454bcfb9265d25a319                                                                                                    0.0s
+[+] Running 16/16manifest list sha256:df2c35c5242751e14574b6856ee27e4dd70204e3f0e7f1bf501fdfa11ebd5ab2                                                                                                           0.0s
+ ✔ Service account-lookup-service                   Built                                                                                                                                                      262.2s 
+ ✔ Service account-lookup-service-handlers          Built                                                                                                                                                        2.1s 
+ ✔ Network als-mojaloop-net                         Created                                                                                                                                                      0.0s 
+ ✘ Container account-lookup-service-redis-node-0-1  Error                                                                                                                                                       12.1s 
+ ✔ Container account-lookup-service-redis-node-3-1  Started                                                                                                                                                     11.1s 
+ ✔ Container account-lookup-service-redis-node-2-1  Started                                                                                                                                                     11.2s 
+ ✔ Container als_kafka                              Healthy                                                                                                                                                     19.6s 
+ ✔ Container account-lookup-service-redis-node-5-1  Started                                                                                                                                                     11.0s 
+ ✔ Container als_mysql_central_ledger               Healthy                                                                                                                                                     21.1s 
+ ✔ Container als_mysql                              Started                                                                                                                                                     11.2s 
+ ✔ Container account-lookup-service-redis-node-1-1  Started                                                                                                                                                     10.9s 
+ ✔ Container account-lookup-service-proxy-1         Started                                                                                                                                                     11.0s 
+ ✔ Container account-lookup-service-redis-node-4-1  Started                                                                                                                                                     10.9s 
+ ✔ Container als_central-ledger                     Created                                                                                                                                                      0.2s 
+ ✔ Container als_account-lookup-service             Created                                                                                                                                                      9.7s 
+ ✔ Container als_account-lookup-service-handlers    Created                                                                                                                                                      0.1s 
+dependency failed to start: container account-lookup-service-redis-node-0-1 exited (1)
+

@@ -64,7 +64,12 @@
     "type": "redis-cluster",
     "proxyConfig": {
       "cluster": [
-        { "host": "redis-node-0", "port": 6379 }
+        { "host": "redis-node-0", "port": 6379 },
+        { "host": "redis-node-1", "port": 6379 },
+        { "host": "redis-node-2", "port": 6379 },
+        { "host": "redis-node-3", "port": 6379 },
+        { "host": "redis-node-4", "port": 6379 },
+        { "host": "redis-node-5", "port": 6379 }
       ]
     }
   },
